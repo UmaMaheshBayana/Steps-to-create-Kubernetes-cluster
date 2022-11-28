@@ -88,7 +88,7 @@ kops update cluster --name=kops.sanelahealth.com --state=s3://kopsbucket-testpro
 cmd to validate the cluster status
 
 ```
-kops validate cluster --state=s3://kopsbucket-testproject
+kops validate cluster --name=kops.sanelahealth.com --state=s3://kopsbucket-testproject
 ````
 check the available node
 
