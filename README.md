@@ -82,7 +82,7 @@ create required volumes size to allocate to worker nodes and master node
 cmd to create the cluster as per the above configuration
 
 ```
-kops update cluster --name kops.sanelahealth.com --state=s3://kopsbucket-testproject --yes --admin
+kops update cluster --name=kops.sanelahealth.com --state=s3://kopsbucket-testproject --yes --admin
 ````
 
 cmd to validate the cluster status
@@ -99,5 +99,5 @@ kubectl get node
 
 cmd to remove kubernetes cluster
 ```
-kops delete cluster --name=kops.sanelahealth.com --sate=s3://kopsbucket-testproject --yes
+kops delete cluster --name=kops.sanelahealth.com --state=s3://kopsbucket-testproject --yes
 ````
